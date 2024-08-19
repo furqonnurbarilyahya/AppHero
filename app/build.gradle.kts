@@ -8,6 +8,10 @@ android {
     namespace = "com.practice.apphero"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.practice.apphero"
         minSdk = 28
