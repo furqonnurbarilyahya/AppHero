@@ -8,9 +8,9 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:layout_marginStart="8dp"
-    android:layout_marginTop="4dp"
+    android:layout_marginTop="8dp"
     android:layout_marginEnd="8dp"
-    android:layout_marginBottom="4dp"
+    android:layout_marginBottom="8dp"
     card_view:cardCornerRadius="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -20,8 +20,8 @@
 
         <ImageView
             android:id="@+id/img_item_photo"
-            android:layout_width="70dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
             android:scaleType="centerCrop"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,7 @@
             card_view:layout_constraintTop_toTopOf="@id/img_item_photo"
             tools:text="Nama Pahlawan"
             android:textStyle="bold"
-            android:textSize="16sp"/>
+            android:textSize="22sp"/>
 
         <TextView
             android:id="@+id/tv_item_descripstion"

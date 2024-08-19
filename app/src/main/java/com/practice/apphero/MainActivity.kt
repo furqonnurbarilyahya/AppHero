@@ -1,14 +1,20 @@
 package com.practice.apphero
 
+import android.os.Build
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.Person
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
+
+    companion object {
+        const val KEY_HERO = "key_hero"
+    }
 
     private lateinit var rvHeroes: RecyclerView
     private val list = ArrayList<Hero>()
