@@ -3,6 +3,7 @@
     <string name="description">Deskripsi</string>
     <string name="about">About</string>
     <string name="share">Share</string>
+    <string name="myName">Furqon Nurbaril Yahya</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>
