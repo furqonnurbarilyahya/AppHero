@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 
 class ListHeroAdapter(private val listHero: ArrayList<Hero>): RecyclerView.Adapter<ListHeroAdapter.ListViewHolder>() {
 
@@ -27,7 +28,10 @@ class ListHeroAdapter(private val listHero: ArrayList<Hero>): RecyclerView.Adapt
         val (name, description, photo) = listHero[position]
         Glide.with(holder.itemView.context)
             .load(photo)
+            .transition(DrawableTransitionOptions.withCrossFade(1000))
             .into(holder.imgPhoto)
+        holder.tvName.text = name
+        holder.tvDescription.text = description
     }
 
 }
